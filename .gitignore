@@ -30,7 +30,7 @@ _testmain.go
 
 # Binaries
 bin
-tools
+#tools
 
 # Data directory
 /torus-data

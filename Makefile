@@ -12,7 +12,7 @@ WHAT := torusd torusctl torusblk
 
 build: vendor
 	for target in $(WHAT); do \
-		$(BUILD_ENV_FLAGS) go build $(VERBOSE_$(V)) -o bin/$$target -ldflags "-X $(REPOPATH).Version=$(VERSION)" ./cmd/$$target; \
+		$(BUILD_ENV_FLAGS)  go build $(VERBOSE_$(V)) -o bin/$$target -ldflags "-X $(REPOPATH).Version=$(VERSION)" ./cmd/$$target; \
 	done
 
 test: tools/glide
